@@ -5,9 +5,9 @@ The game offers to guess the word and draws as many underscores as there are let
 
 The user enters letters to guess the word.
 
-A total of 7 attempts to guess the letters in the word.
+It is possible to make no more than 7 mistakes
 
-If the user has not guessed the word in 7 attempts, and the gallows is drawn completely, then he is considered "hanged" and the game ends.
+If the user made 7 mistakes and did not guess the word, and the gallows is drawn completely, then he is considered "hanged" and the game ends.
 
 The program uses Russian words and letters.
 
