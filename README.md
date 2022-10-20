@@ -11,6 +11,8 @@ If the user made 7 mistakes and did not guess the word, and the gallows is drawn
 
 The program uses Russian words and letters.
 
+You can add new words to the game. To do this, open the `date` folder and the `words.txt` file, and write new words into it.
+
 ```
 ruby main.rb
 ```
