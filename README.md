@@ -1,44 +1,33 @@
 # hangman
-A console game where you need to guess the word.
+```
+ruby
+```
 
-The game offers to guess the word and draws as many underscores as there are letters in the word.
+```
+game-console
+```
 
-The user enters letters to guess the word.
+Консольная игра, в которой вам нужно угадать слово.
 
-It is possible to make no more than 7 mistakes
+Игра предлагает угадать слово и рисует столько подчеркиваний, сколько букв в слове.
 
-If the user made 7 mistakes and did not guess the word, and the gallows is drawn completely, then he is considered "hanged" and the game ends.
+Пользователь вводит буквы, чтобы угадать слово.
 
-The program uses Russian words and letters.
+Можно сделать не более 7 ошибок. Если пользователь допустил 7 ошибок и не угадал слово, и виселица нарисована полностью, то он считается "повешенным" и игра заканчивается.
 
-You can add new words to the game. To do this, open the `date` folder and the `words.txt` file, and write new words into it.
+В программе используются русские слова и буквы.
+
+Вы можете добавлять в игру новые слова. Для этого откройте папку `data`, файл `words.txt` и запишите в него новые слова.
 
 ```
 ruby main.rb
 ```
 
-The program is written in Ruby.
+Программа написана на языке Ruby.
 
-Example of a visual:
+Пример визуала:
 
-```
-Слово: __ __ Й __
-          _______
-          |/     |
-          |     (_)
-          |     _|_
-          |    / | \\
-          |      |
-          |     / \\
-          |    /   \\
-          |
-        __|________
-        |         |
+<a href="https://asciinema.org/a/J5VWoOhUJbLbYCRprzvfoztNX" target="_blank"><img src="https://asciinema.org/a/J5VWoOhUJbLbYCRprzvfoztNX.svg" /></a>
 
-      * * *  RIP  * * *
-
-Ошибки (7): Е, Н, Г, С, Ц, Д, Р
-У вас осталось ошибок: 0
-
-Вы проиграли, было загадано слово: ФАЙЛ
-```
+Подробнее о принципах игры:
+https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D1%81%D0%B5%D0%BB%D0%B8%D1%86%D0%B0_(%D0%B8%D0%B3%D1%80%D0%B0)
