@@ -1,12 +1,12 @@
-require_relative 'lib/console_interface'
-require_relative 'lib/game'
-require 'colorize'
+require_relative "lib/console_interface"
+require_relative "lib/game"
+require "colorize"
 
 String.colors
 
-puts 'Всем привет!'.colorize(:blue)
+puts "Hello!".colorize(:blue)
 
-word = File.readlines("#{__dir__}/data/words.txt", encoding: 'UTF-8', chomp: true).sample
+word = File.readlines("#{__dir__}/data/words.txt", encoding: "UTF-8", chomp: true).sample
 game = Game.new(word)
 console_interface = ConsoleInterface.new(game)
 
