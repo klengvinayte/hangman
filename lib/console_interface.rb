@@ -9,15 +9,15 @@ class ConsoleInterface
   end
 
   def print_out
-    puts "Слово: #{word_to_show}".colorize(:yellow)
+    puts "Word: #{word_to_show}".colorize(:yellow)
     puts "#{figure}".colorize(:green)
-    puts "Ошибки (#{@game.errors_made}): #{errors_to_show.colorize(:red)}".colorize(:red)
-    puts "У вас осталось ошибок: #{@game.errors_allowed}".colorize(:blue)
+    puts "Mistakes (#{@game.errors_made}): #{errors_to_show.colorize(:red)}".colorize(:red)
+    puts "There are: #{@game.errors_allowed} attempts".colorize(:blue)
 
     if @game.won?
-      puts "Поздравляем, вы выиграли!"
+      puts "Congratulations, you have won!"
     elsif @game.lost?
-      puts "Вы проиграли, было загадано слово: #{@game.word}".colorize(:red)
+      puts "You have lost, the hidden word:: #{@game.word}".colorize(:red)
     end
   end
 
@@ -34,7 +34,7 @@ class ConsoleInterface
   end
 
   def get_input
-    print "Введите следующую букву: "
+    print "Enter the following letter: "
     gets[0].upcase
   end
 end
